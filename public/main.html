@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Schedular</title>
+	<link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+    <section id="schedule">
+    
+      <div class="col-left">
+       <div class="dates">
+			<div class="month">
+				<div class="arrows prev-mth">&lt;</div>
+				<div class="mth"></div>
+				<div class="arrows next-mth">&gt;</div>
+			</div>
+			<div class="days"></div>
+	</div>
+      </div>
+
+<div class="col-right">
+    <h1><u> Schedule Here</u></h1>
+        <!-- <legend>Schedule</legend> -->
+
+     <form action="/slotReg" method="POST">
+	 <label for="mentor">
+                <input list="mntr" name='mentor' placeholder="Mentor">
+                <datalist id="mntr">
+                    <option value="Sumeet Malik"></option>
+                    <option value="Abhishek Verma"></option>
+                    <option value="Sushant Beriwal"></option>
+                </datalist>
+            </label> <br><br>
+            
+            <label for="slt"> Slots:
+                <input type="checkbox" name="s" id="slot" class="slots" value="10AM-11AM">10AM-11AM
+                <input type="checkbox" name="s" id="slot" class="slots" value="1PM-2PM">1PM-2PM
+                <input type="checkbox" name="s" id="slot" class="slots" value="4PM-5PM">4PM-5PM
+            </label> <br><br>
+           
+	<div class="date-picker">
+   <input type="" name="dos" id="dos" class="abc" placeholder="" >
+    <label for="dos"> 
+		<div class="selected-date"></div>
+    </label> <br><br>
+   </div>
+<!-- </form> -->
+		
+ <button style="background-color: gray,  border-radius:10px;">Submit</button>
+       
+        </form>
+       </div>
+    </div>
+   
+  </section>
+	<script src="schedule.js"></script>
+</body>
+</html>

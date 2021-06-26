@@ -1,0 +1,138 @@
+ body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+   height:100%;
+  background-image: url("mainbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 2000px 1500px;
+}
+
+.schedule {
+
+	text-align: center;
+	max-width: 10px;
+	margin: 0 auto;
+
+}
+.col-left {
+	width: 250px; 
+	height: 360px;
+  float: left;
+	
+}
+ .col-right {
+	width: 50%;
+  text-align: center;
+  float:right;
+  margin-top:100px;  
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 30px 0px;
+	color: #313131;
+	font-size: 35px;
+	font-weight: 900;
+	text-align: center;
+}
+
+h1 span {
+	font-weight: 300;
+}
+
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	height: 10px;
+	margin: 21px auto;	
+}
+
+.date-picker .selected-date {
+	max-width: 350px;
+	height: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: -15px ;
+	color: black;
+	font-size: 15px;
+	margin-top: 2px auto;
+}
+
+ .dates {
+    width: 400px;
+	position: relative;
+	top: 40%;
+	left: 250px;
+	right: 0;
+	display: block;
+}
+
+.dates.active {
+	background-color: #33FFFF;
+}
+
+.date-picker .selected-date .dates.active {
+	background-color: #33FFFF;
+}
+
+.dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #EEE;
+	border-collapse:collapse;
+    border:1px solid black;
+	border-radius:10px 10px 0px 0px;
+	background-color: #33CCFF;
+}
+
+ .dates .month .arrows {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 20px;
+}
+
+.dates .month .arrows:hover {
+	background-color: #F3F3F3;
+}
+
+ .dates .month .arrows:active {
+	background-color: #F3F3F3;
+}
+
+ .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	border-collapse:collapse;
+    border:1px solid black;
+	  border-radius:0px 0px 10px 10px;
+}
+
+.dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+    text-align:center;
+    padding:20px 0;
+    border:1px solid white;
+    cursor:pointer;
+}
+
+ .dates .days .day.selected {
+	background-color: #00CA99;
+}
